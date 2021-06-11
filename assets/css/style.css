@@ -7,10 +7,12 @@
 body {
   background-color: #d9dcd6;
   display: flex;
+  justify-content: center;
 }
 
 main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -84,19 +86,14 @@ p {
   margin-left: 25px;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#col-01 {
+#top-page {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
 }
 
-#row-01 {
+#bottom-page {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -162,8 +159,7 @@ main {
 footer {
   padding: 20px;
   clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
@@ -172,8 +168,7 @@ footer {
 }
 
 @media all and (max-width: 1085px) {
-  #row-01 {
-    display: flex;
+  #bottom-page {
     flex-direction: column;
   }
 
@@ -190,23 +185,19 @@ footer {
 
 @media all and (max-width: 900px) {
   header {
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
 
   .logo {
-    display: flex;
     justify-content: center;
   }
 
   ul {
-    display: flex;
     flex-direction: column;
   }
 
   .main-nav {
-    display: flex;
     justify-content: center;
   }
 }
